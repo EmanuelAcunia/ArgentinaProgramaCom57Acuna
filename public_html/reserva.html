@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Don Viajes</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 
+  
+    <link rel="stylesheet" type="text/css" href="css/estilos_1.css">
+    <script src="formulario.js" type="text/javascript"></script>
+    <script src="form-validation.js" type="text/javascript"></script>
+</head>
+<body>
+    <!--Top-->
+     
+	<header class="main-header" id="presentacion-organizacion">
+		<!--Navigation-->
+		<nav id="menu" class="navbar" style="display: block;">
+			<div class="container">
+				<div class="navbar-header">
+					<div class="navbar-brand">
+						<a class="navbar-brand-link" href="index.html">
+							 <img src="images/logo.jpeg" alt="Imagen de la organización" style="width: 100px;display: block;"/>
+		
+						</a>
+					</div>
+					<center><button type="button" class="btn btn-navbar navbar-toggle visible-xs" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button></center>
+				</div>
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="index.html">
+								Inicio
+								 
+							</a>
+						</li>
+						<li>
+							<a href="reserva.html">
+								Reserva
+								 </a>
+						</li>
+						 
+						<li>
+							<a href="contacto.html">
+								Contacto
+							 </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		 
+		
+	</header>
+    <div id="misredes"  >
+<a href="https://www.facebook.com/EmaAcunaC/" target="_blank" title="Sígueme en Facebook">
+    <img src="images/facebook-icon.png" alt=""/> </a>
+
+    
+<a href="https://www.instagram.com/emanuel_acunia92/" target="_blank" title="Sígueme en Instagram">
+       <img src="images/instagram-icon.png" alt=""/></a>	 
+
+<a href="https://api.whatsapp.com/send/?phone=5493854894987&text&type=phone_number&app_absent=0"  title="Sucursal - Luna" target="_blank">
+<img src="images/whatsapp-icon.png" alt=""/></a>
+
+</div>	
+    <section class="seccionproductos" style="background-color: indigo">
+         <table>
+            <tr>
+                <td>
+                    <img src="images/cordoba-opcion.jpg" alt=""/>
+                </td>
+                <td>
+                    <img src="images/corrientes-opcion.jpg" alt=""/>
+                </td>
+                <td>
+                    <img src="images/jujuy-opcion.jpeg" alt=""/>
+                </td>
+                 
+            </tr>
+             <tr>
+                <td>
+                    <img src="images/salta-opcion.jpg" alt=""/>
+                </td>
+                <td>
+                    <img src="images/tucuman-opcion.jpg" alt=""/>
+                </td>
+                <td>
+                    <img src="images/misiones-opcion.jpg" alt=""/>
+                </td>
+
+             </tr>
+         </table>
+    </section>
+    <section class="sectionpresupuesto" style="background-color: khaki" >
+        <table>
+            <tr>
+                <td>
+                    <!-- <img src="images/tirolesa.jpeg" style="width: 500px" alt=""/>
+                    -->
+                </td>
+                <td>
+                    <!-- Contenido del formulario de contacto -->
+                    <h2>Reserva tu pack turistico!!!!!</h2>
+                    <form id="formularioProceso" method="post">
+                        <table id="tablacontacto">
+                            <tr >
+                                <td>
+                                    <label for="nombre">Nombre</label>
+                                </td>
+                                <td>
+
+                                    <input type="text" id="nombre" name="nombre"> 
+                                </td>
+                                <td>
+                                    <label for="apellido">Apellido</label>
+                                </td>
+
+                                <td>
+
+                                    <input type="text" id="apellido" name="apellido">
+                                </td>
+                            </tr>    
+                            <tr>
+                                <td>
+                                    <label for="tdni">Tipo De Documento</label>
+
+                                </td>
+                             <td>
+                                 <input type="text" id="tdni" name="tdni" value="D.N.I." readonly=""> 
+                           
+                            </td>
+                            <td>
+                                <label for="dni">Nro Documento</label>
+
+                            </td>
+                            <td>
+                                <input type="number" id="dni" name="dni">
+                            </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="destino">Destino</label>
+                                </td>
+                                 <td>
+                                      <select name="destino" id="destino" onchange="mostrardestino();mostrarpresupuesto()" >
+          <option value = ""  selected="" disabled="" >Elige una opción</option> 
+        <option value="25000">Cordoba - 6 Dias -  </option>
+        <option value="27000">Corrientes - 3 Dias - 4 noches </option>
+        <option value="22000">Jujuy - 6 Dias - 7 Dias </option>
+        <option value="30000">Misiones - 6 Dias - 7 Dias </option>
+        <option value="24000">Salta - 6 Dias - 7 Dias</option>
+        <option value="15000">Tucuman - 3 Dias - 4 noches </option> 
+        </select>
+                                 </td>
+                                  <td>
+                                    <label for="precio">Precio del pack</label>
+                                </td> 
+                                <td>
+                                      <input type="text" id="precio" readonly="" />
+                                </td>
+                            </tr>
+                           <tr>
+                                <td>
+                                   <label for="categoria">Servicio</label> 
+                                </td>
+                                <td>
+                                       <select name="categoria" id="categoria" onchange="mostrarservicio();mostrarpresupuesto()">
+         <option value = "" selected="" disabled="" >Elige una opción</option> 
+        <option value="5000">Media Pension</option>
+        <option value="8000">Pension Completa</option>
+        <option value="12000">Full Service</option>
+        </select>
+                                </td>
+                                 <td>
+                                    <label for="servicio">Precio del Servicio:</label>   
+                                </td>
+                                <td>
+                                      <input type="text" id="servicio" readonly=""  value="0"/>
+                                </td>
+                            </tr>
+                             <tr>
+                                <td>
+                                    <label for="cantidad">Personas</label>  
+                                </td>
+                                <td>
+                                    <select name="cantidad" id="cantidad" onchange="mostrarpasajeros();mostrarpresupuesto()" >
+        <option value = "" selected="" disabled="" >Elige una opción</option> 
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        </select>  
+                                </td>
+                                 <td>
+                                     <label for="pasajeros">Cantidad de Pasajeros</label> 
+                                </td>
+                                <td>
+                                     <input type="text" id="pasajeros" readonly="" />
+                                </td>
+                            </tr>
+                            
+                             
+                            <tr>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    <label for="presupuesto">Presupuesto Del Pack Del Tour Turistico:</label> 
+                                </td>
+                                <td>
+                                      <input type="text" id="presupuesto" readonly="" />
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>  <label for="correo">Email:</label></td>
+                                <td>
+                                <input type="email" id="correo" name="correo" required></td>
+                                <td>   <label for="telefono">Telefono:</label></td>
+                                <td><input type="text" id="telefono" name="telefono"></td>
+                                 
+                            </tr>
+                        </table>
+
+          
+            
+           
+          
+          
+            
+            <button type="submit">Continuar</button>
+        </form>
+                </td>
+            </tr>
+        </table>
+         
+       
+        
+    </section>
+  
+     
+
+    
+   <footer>
+ Copyright © 2023 - Acuña, Franco 
+</footer>
+</body>
+</html>

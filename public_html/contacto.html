@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Don Viajes</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <script src="formulario.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/estilos_2.css">
+</head>
+<body>
+    <!--Top-->
+     
+	<header class="main-header" id="presentacion-organizacion">
+		<!--Navigation-->
+		<nav id="menu" class="navbar" style="display: block;">
+			<div class="container">
+				<div class="navbar-header">
+					<div class="navbar-brand">
+						<a class="navbar-brand-link" href="index.html">
+							 <img src="images/logo.jpeg" alt="Imagen de la organización" style="width: 100px;display: block;"/>
+		
+						</a>
+					</div>
+					<center><button type="button" class="btn btn-navbar navbar-toggle visible-xs" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button></center>
+				</div>
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="index.html">
+								Inicio
+								 
+							</a>
+						</li>
+						<li>
+							<a href="reserva.html">
+								Reserva
+								 </a>
+						</li>
+						 
+						<li>
+							<a href="contacto.html">
+								Contacto
+							 </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		 
+		
+	</header>
+    
+    <section class="section1" style="background-color: lightgreen">
+        <table>
+            <tr>
+               
+                <td>
+                    <h1>Contactanos</h1>
+                    <p>
+                        Tenemos nuestras redes para se pueda comunicar con nosotros! 
+                        a traves de Facebook, Instagram, Twitter, o Whatspp!
+                        Nos comunicaremos a la brevedad para asesorarte en todas tus consulta.
+                        Estamos para ayudarte!
+                    </p>
+                   <div id="misredes"  >
+<a href="https://www.facebook.com/EmaAcunaC/" target="_blank" title="Sígueme en Facebook">
+    <img src="images/facebook-icon.png" alt=""/> </a>
+
+    
+<a href="https://www.instagram.com/emanuel_acunia92/" target="_blank" title="Sígueme en Instagram">
+       <img src="images/instagram-icon.png" alt=""/></a>	 
+
+<a href="https://api.whatsapp.com/send/?phone=5493854894987&text&type=phone_number&app_absent=0"  title="Sucursal - Luna" target="_blank">
+<img src="images/whatsapp-icon.png" alt=""/></a>
+
+</div>	
+                </td>
+                 <td>
+                    <img src="images/atencion.jpg" alt=""/>
+                </td>
+            </tr>
+        </table>
+        
+    </section>
+  
+
+  <!-- Sección de Formulario de Contacto -->
+    <section class="section2" style="background-color: khaki" >
+        <table>
+            <tr>
+                <td>
+                    <img src="images/contacto.jpg" alt=""/>
+                </td>
+                <td>
+                    <!-- Contenido del formulario de contacto -->
+        <h2>Formulario de Contacto</h2>
+        <form id="formularioContacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"  >
+             <label for="telefono">Telefono:</label>
+            <input type="text" id="telefono" name="telefono"  >
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" >
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje"  ></textarea>
+            <input id="botoncontacto" type="submit" value="Enviar"  >            
+        </form> 
+                </td>
+            </tr>
+        </table>
+         
+       
+        
+    </section>
+  
+    	  
+
+ <footer>
+ Copyright © 2023 - Acuña, Franco 
+</footer>
+</body>
+</html>

@@ -1,0 +1,125 @@
+/* Reset de estilos para normalizar el diseño en diferentes navegadores */
+body, html, h1, h2, h3, p, a, input, form, button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: Arial, sans-serif;
+    
+}
+ 
+/* Estilo para el encabezado de la página */
+header {
+   background: black;
+   position: fixed;
+   color:white;
+   top: 0;
+   left: 0;
+   width: 100%;
+    height: 14%;
+   z-index: 999px;
+   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+ 
+ 
+
+/* Estilo para el título de la página */
+h1 {
+    font-size: 28px;
+}
+
+/* Estilo para el contenido principal */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo para las secciones de la página */
+.section {
+    margin-bottom: 40px;
+}
+
+/* Estilo para los formularios */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo para los campos de entrada de texto */
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Estilo para los botones */
+button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Estilo para los mensajes de error en los formularios */
+.error {
+    color: #ff0000;
+    margin-top: 5px;
+}
+
+#myCarousel img
+{
+     height: 350px;
+     width: 350px;
+          margin:auto;
+
+}
+#myCarousel item 
+{
+     height: 350px;
+     width: 350px;
+     margin:auto;
+}
+
+#imagen-fondo
+{
+   background-image: url("images/fondo.jpg");
+ height: 313px;
+ background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+.mitexto{
+    
+    font-style: normal;
+    color: black;
+     position:relative;
+    top: 70%;
+    left: 50%;
+    margin-top: 10%;
+    transform: translate(-50%, -50%);
+}
+p{
+    margin: auto;
+}
+tr{
+    padding: 20px;
+}
+td 
+{
+    border: 40px;
+    
+    color:white;
+}
+footer {
+height:35px;
+line-height:35px;
+background:black;
+color:white;
+text-align:center;
+position:fixed;
+bottom:0;
+left:0;
+width:100%;}
